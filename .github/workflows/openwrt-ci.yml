@@ -47,8 +47,8 @@ jobs:
           
       - name: 同步最新的源码
         run: |
-          git config --global zhang7122@gmail.com
-          git config --global w0798
+          git config --global user.name "w0798"
+          git config --global user.email "zhang7122@gmail.com"
           git stash
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
           git pull openwrt master
